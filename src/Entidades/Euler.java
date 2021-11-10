@@ -70,7 +70,7 @@ public class Euler {
     // Cargar los valores de Y
     private void cargarValoresY(){
         this.y.add(this.y_inicial);
-        for (int i = 0 ; i < this.x.size()-1; i++) {
+        for (int i = 0 ; i <= this.x.size()-1; i++) {
             double predictor = calcularPredictor(this.x.get(i),this.y.get(i)); // Calcular el predictot
             double corrector = calcularCorrector(i, predictor); // Calcular el corrector
             this.predictor.add(predictor);

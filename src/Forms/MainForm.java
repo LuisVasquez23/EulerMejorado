@@ -33,52 +33,28 @@ public class MainForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        x_inicial_input = new javax.swing.JTextField();
-        x_final_input = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        y_inicial_input = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        h_input = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        ecuacion_input = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaResultados = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
+        x_inicial_input = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        x_final_input = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        y_inicial_input = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        h_input = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        ecuacion_input = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(170, 20, 240));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
-        jLabel1.setText("EULER MEJORADO");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 2, 48)); // NOI18N
-        jLabel2.setText("Datos");
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel3.setText("Xo");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel4.setText("Xf");
-
-        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel5.setText("Yo");
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel6.setText("h");
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel7.setText("Ecuacion:");
-
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jButton1.setText("Caclular");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(170, 20, 240));
 
         tablaResultados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -90,72 +66,114 @@ public class MainForm extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaResultados);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(x_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(23, 23, 23)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(x_final_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(y_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(h_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(ecuacion_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addGap(123, 123, 123)
-                                        .addComponent(jLabel6)
-                                        .addGap(139, 139, 139)
-                                        .addComponent(jLabel7))))
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
+        jButton1.setBackground(new java.awt.Color(188, 140, 242));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Calcular");
+        jButton1.setBorderPainted(false);
+        jButton1.setFocusPainted(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Xo");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Xf");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("Yo");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("h");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Ecuacion:");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 2, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Datos");
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 56)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("EULER MEJORADO");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(36, 36, 36)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(129, 129, 129)
+                        .addComponent(jLabel4)
+                        .addGap(129, 129, 129)
+                        .addComponent(jLabel5)
+                        .addGap(123, 123, 123)
+                        .addComponent(jLabel6)
+                        .addGap(139, 139, 139)
+                        .addComponent(jLabel7))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(x_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(x_final_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(y_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(h_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(ecuacion_input, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 742, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(38, 38, 38)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(11, 11, 11)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(6, 6, 6)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(x_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(x_final_input, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(y_inicial_input, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(h_input, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ecuacion_input, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(h_input, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(ecuacion_input, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -207,7 +225,7 @@ public class MainForm extends javax.swing.JFrame {
                 
                 limpiarTabla();
                 
-                for (int i = 0; i < corrector.size(); i++) {
+                for (int i = 0; i < ValoresX.size()-1; i++) {
                     
                     String[] datos = {
                         Integer.toString(i),
@@ -276,6 +294,7 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaResultados;
     private javax.swing.JTextField x_final_input;
