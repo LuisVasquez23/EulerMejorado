@@ -1,5 +1,9 @@
 package Entidades;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import org.nfunk.jep.JEP;
+
 public class Euler {
     private double x_inicial;
     private double x_final;
@@ -53,6 +57,23 @@ public class Euler {
     // Cargar los valores de Y
     public void cargarValoresY(){
         
+    }
+    
+    private double EvaluarFx(Double valor, String funcion){
+        
+        BigDecimal bd = new BigDecimal(valor).setScale(2, RoundingMode.HALF_UP);
+        double value = bd.doubleValue();
+        
+        JEP j = new JEP();
+        j.addStandardConstants();
+        j.addStandardFunctions();
+        j.addVariable("x", value); //("variable", numero a evaluar) 
+        j.parseExpression(funcion);
+        
+        bd = new BigDecimal(j.getValue()).setScale(2, RoundingMode.HALF_UP);
+        value = bd.doubleValue();
+        
+        return value;
     }
     
 }
